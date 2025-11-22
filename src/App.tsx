@@ -1,7 +1,17 @@
+import { Container } from "./components/Container";
+import { Logo } from "./components/Logo";
+import { Menu } from "./components/Menu";
+
 export function App() {
   return (
-    <div>
-      <h1>Foca.ai</h1>
-    </div>
+    <>
+      <Container className="mt-6">
+        <Logo />
+      </Container>
+
+      <Container>
+        <Menu />
+      </Container>
+    </>
   );
 }
