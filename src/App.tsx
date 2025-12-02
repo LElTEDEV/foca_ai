@@ -1,17 +1,18 @@
+import { MainForm } from "./components/MainForm";
 import { Container } from "./components/Container";
-import { Logo } from "./components/Logo";
-import { Menu } from "./components/Menu";
+import { CountDown } from "./components/CountDown";
+import { MainTemplate } from "./templates/MainTemplate";
 
 export function App() {
   return (
-    <>
-      <Container className="mt-6">
-        <Logo />
+    <MainTemplate>
+      <Container>
+        <CountDown />
       </Container>
 
       <Container>
-        <Menu />
+        <MainForm />
       </Container>
-    </>
+    </MainTemplate>
   );
 }
