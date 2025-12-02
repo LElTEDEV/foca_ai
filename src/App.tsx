@@ -1,18 +1,5 @@
-import { MainForm } from "./components/MainForm";
-import { Container } from "./components/Container";
-import { CountDown } from "./components/CountDown";
-import { MainTemplate } from "./templates/MainTemplate";
+import { Home } from "./pages/Home";
 
 export function App() {
-  return (
-    <MainTemplate>
-      <Container>
-        <CountDown />
-      </Container>
-
-      <Container>
-        <MainForm />
-      </Container>
-    </MainTemplate>
-  );
+  return <Home />;
 }
